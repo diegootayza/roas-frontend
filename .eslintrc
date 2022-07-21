@@ -1,0 +1,24 @@
+{
+    "root": true,
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "extends": ["plugin:vue/vue3-essential", "prettier"],
+    "parser": "vue-eslint-parser",
+    "parserOptions": {
+        "parser": "@typescript-eslint/parser",
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-unused-vars": ["error"],
+        "sort-imports": ["error", { "ignoreDeclarationSort": true }],
+        "sort-keys": ["error", "asc"],
+
+        "vue/attributes-order": ["error", { "alphabetical": true }],
+        "vue/component-name-in-template-casing": ["error", "PascalCase"],
+        "vue/html-self-closing": ["error", { "html": { "normal": "never", "void": "always" } }],
+        "vue/multi-word-component-names": ["off"],
+        "vue/sort-keys": ["error", "asc"]
+    }
+}
